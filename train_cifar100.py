@@ -54,11 +54,6 @@ if model_index == 0:
     from model.resnet18 import ResNet18
     net = ResNet18(classes)
 
-elif model_index == 1:
-    from model.WgrNet_Group import wgrnet
-    net = wgrnet(3, classes, depth=depth_id, width=width_id, light=light_id, kernel=kernel, stride=stride,
-             expansion=expansion)
-
 elif model_index == 2:
     from model.WgrNet import wgrnet
     net = wgrnet(3, classes, depth=depth_id, width=width_id, light=light_id, kernel=kernel, stride=stride,
