@@ -50,10 +50,7 @@ expansion = args.expansion
 light_id = args.light_id
 model_index = args.model_index
 gpu_id = args.gpu_id
-if model_index == 1:
-    from model.WgrNet_Group import wgrnet
-    net = wgrnet(3, classes, depth=depth_id, width=width_id, light=light_id, kernel=kernel, stride=stride,
-                 expansion=expansion)
+
 elif model_index == 2:
     from model.WgrNet import wgrnet
     net = wgrnet(3, classes, depth=depth_id, width=width_id, light=light_id, kernel=kernel, stride=stride,
